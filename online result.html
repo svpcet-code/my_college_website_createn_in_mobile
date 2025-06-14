@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Engineering Result Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #a9e2eb;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #003366;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    select,
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      background: #0077b6;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005f8b;
+    }
+    .result {
+      margin-top: 20px;
+      background: #e0f7fa;
+      padding: 15px;
+      border-radius: 4px;
+      text-align: center;
+   
+    }
+    h1{
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>-----  RESULT 2025 BACHES  ------</h1>
+  <div class="container">
+    <h1>St. Vincent Pallotti College Engineering Results</h1>
+
+    <form id="resultForm" onsubmit="showResult(event)">
+      <label for="rollNumber">Enter Roll Number:</label>
+      <input type="text" id="rollNumber" placeholder="Enter your roll number" required>
+
+      <label for="department">Select Department:</label>
+      <select id="department" required>
+        <option value="">--Select Department--</option>
+        <option value="Computer Engineering">Computer Engineering</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Data Science">Data Science</option>
+        <option value="IoT Engineering">IoT Engineering</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+        <option value="Electronics & Telecommunication">Electronics & Telecommunication</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+        <option value="Robotics and Automation">Robotics and Automation</option>
+        <option value="Cyber Security">Cyber Security</option>
+      </select>
+
+  <label for="sem">Select semister:</label>
+      <select id="department" required>
+        <option value="">--Select Department--</option>
+        <option value="semester 1">semister 1</option></option>
+        <option value="semister 2">semister 2</option>
+        <option value="semister 3">semister 3</option>
+        <option value="semister 4">semister 4</option>
+        <option value="semister 5">semister 5</option></option>
+        <option value="semister 6">semister 6</option>
+        <option value="semister 7">semister 7</option></option>
+        <option value="semister 8">semister 8</option>
+      </select>
+
+
+
+
+      <button type="submit">Get Result</button>
+    </form>
+
+    <div id="resultDisplay" class="result" style="display: none;">
+      <h2>Result Details</h2>
+      <p>Roll Number: <span id="roll"></span></p>
+      <p>Department: <span id="dept"></span></p>
+      <p>Name: Shubham S Dongare</p>
+      <p>SGPA: 8.5</p>
+    </div>
+  </div>
+
+  <script>
+    function showResult(event) {
+      event.preventDefault();
+      const rollNumber = document.getElementById("rollNumber").value;
+      const department = document.getElementById("department").value;
+
+      if (rollNumber && department) {
+        document.getElementById("roll").innerText = rollNumber;
+        document.getElementById("dept").innerText = department;
+        document.getElementById("resultDisplay").style.display = "block";
+      } else {
+        alert("Please fill in both fields.");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVPCET Fee Structure</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #121212;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #1f1f1f;
+            color: white;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Menu */
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: rgba(50, 50, 50, 0.9);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 50px;
+            z-index: 999;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.4s ease;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .menu a:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Content Section */
+        .container {
+            padding: 130px 20px;
+        }
+
+        .fee-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Hostel Info Link */
+        .hostel-info {
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #00aaff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .hostel-info:hover {
+            color: #ffcc00;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 12px;
+            background: #1f1f1f;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        🎓 SVPCET - Fee Structure 2025
+    </div>
+
+    <!-- Menu Bar -->
+    <div class="menu">
+      <a href="Homepage.html">Home</a>
+        <a href="#open">OPEN</a>
+        <a href="#obc">OBC/EBC</a>
+        <a href="#scst">SC/ST</a>
+        <a href="#vjnt">VJ/NT/SBC</a>
+        <a href="#hostel">Hostel</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="fee-box" id="open">💰 <b>OPEN / OMS</b><br>₹1,32,450 - ₹1,32,950</div>
+        <div class="fee-box" id="obc">💰 <b>OBC / EBC</b><br>₹77,450 - ₹77,950</div>
+        <div class="fee-box" id="scst">💰 <b>SC / ST</b><br>₹5,950 - ₹6,450</div>
+        <div class="fee-box" id="vjnt">💰 <b>VJ / NT / SBC</b><br>₹22,450 - ₹22,950</div>
+
+        <!-- Hostel Fees Section -->
+        <div class="fee-box" id="hostel">
+            🏠 <b>Hostel Fees</b>
+        </div>
+
+        <!-- Boys Hostel Fees -->
+        <div class="fee-box">🏡 <b>Boys' Hostel</b><br>₹77,000 per year (Includes: Furnished Rooms, Food, Wi-Fi, Security)</div>
+
+        <!-- Girls Hostel Fees -->
+        <div class="fee-box">🏡 <b>Girls' Hostel</b><br>₹77,000 per year (Includes: Furnished Rooms, Food, Wi-Fi, Security)</div>
+
+        <!-- About Hostel Link -->
+        <a href="hostel facility.html" class="hostel-info">📘 Learn More About Hostel Facilities</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 St. Vincent Pallotti College of Engineering & Technology
+    </div>
+
+</body>
+</html>

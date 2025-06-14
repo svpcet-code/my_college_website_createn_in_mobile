@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timings</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(90deg, #6ec6ff, #84ffff);
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Menu Bar */
+        .menu {
+            display: flex;
+            justify-content: center;
+            background: #b2ebf2;
+            padding: 12px;
+            position: fixed;
+            width: 100%;
+            top: 55px;
+            z-index: 999;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            padding: 12px 18px;
+            margin: 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.4s ease-in-out;
+            border-radius: 20px;
+            background: #e0f7fa;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu a:hover {
+            background: #b2ebf2;
+            transform: scale(1.1);
+        }
+
+        /* Content Section */
+        .container {
+            padding: 130px 20px;
+            text-align: center;
+        }
+
+        /* Timetable Styling */
+        .timetable {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .timetable th, .timetable td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .timetable th {
+            background: #b3e5fc;
+            color: #333;
+        }
+
+        .timetable tr:nth-child(even) {
+            background: #e1f5fe;
+        }
+
+        .timetable tr:hover {
+            background: #b3e5fc;
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+        }
+
+        .lunch {
+            background: #ffecb3;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 12px;
+            background: #6ec6ff;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+         College Timings Schedule
+    </div>
+
+    <!-- Animated Menu Bar -->
+    <div class="menu">
+      <a href="Homepage.html">HOME</a>
+        <a href="#sunday">Sunday</a>
+        <a href="#monday">Monday</a>
+        <a href="#tuesday">Tuesday</a>
+        <a href="#wednesday">Wednesday</a>
+        <a href="#thursday">Thursday</a>
+        <a href="#friday">Friday</a>
+        <a href="#saturday">Saturday</a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+        <h1>College Lecture & Lunch Timetable</h1>
+
+        <table class="timetable">
+            <tr>
+                <th>Day</th>
+                <th>Lectures Before Lunch</th>
+                <th>Lunch Break</th>
+                <th>Lectures After Lunch</th>
+                <th>College Closing Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>4 (9:00 AM - 1:00 PM)</td>
+                <td class="lunch">1:00 PM - 2:00 PM</td>
+                <td>2 (2:00 PM - 4:15 PM)</td>
+                <td>4:15 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>4 (9:00 AM - 1:00 PM)</td>
+                <td class="lunch">1:00 PM - 2:00 PM</td>
+                <td>2 (2:00 PM - 4:15 PM)</td>
+                <td>4:15 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>4 (9:00 AM - 1:00 PM)</td>
+                <td class="lunch">1:00 PM - 2:00 PM</td>
+                <td>2 (2:00 PM - 4:15 PM)</td>
+                <td>4:15 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>4 (9:00 AM - 1:00 PM)</td>
+                <td class="lunch">1:00 PM - 2:00 PM</td>
+                <td>2 (2:00 PM - 4:15 PM)</td>
+                <td>4:15 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>4 (9:00 AM - 1:00 PM)</td>
+                <td class="lunch">1:00 PM - 2:00 PM</td>
+                <td>2 (2:00 PM - 4:15 PM)</td>
+                <td>4:15 PM</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>3 (9:00 AM - 1:00 PM)</td>
+                <td class="lunch">1:00 PM - 2:00 PM</td>
+                <td>2 (2:00 PM - 4:15 PM)</td>
+                <td>4:15 PM</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 St. Vincent Pallotti College of Engineering & Technology, Nagpur
+    </div>
+
+</body>
+</html>

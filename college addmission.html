@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Flash Card</title>
+    <style>
+        body {
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .flash-card {
+            width: 300px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .flash-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .flash-header {
+            background: #003366;
+            color: #FFD700;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .flash-content {
+            padding: 20px;
+            color: #333333;
+            font-size: 16px;
+        }
+        .flash-button {
+            display: block;
+            background: #FFD700;
+            color: #003366;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 15px auto;
+            width: 80%;
+            transition: 0.3s;
+        }
+        .flash-button:hover {
+            background: #FFC107;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flash-card">
+        <div class="flash-header">College Admission</div>
+        <div class="flash-content">
+            Apply now for the best academic programs and career opportunities.
+        </div>
+        <a href="#" class="flash-button">Apply Now</a>
+    </div>
+
+</body>
+</html>

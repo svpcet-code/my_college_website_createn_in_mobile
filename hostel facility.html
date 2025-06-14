@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Information</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #121212;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00aaff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Table Styles */
+        .hostel-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .hostel-table th, .hostel-table td {
+            padding: 15px;
+            border: 1px solid #444;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .hostel-table th {
+            background: #00aaff;
+            color: white;
+        }
+
+        .hostel-table tr {
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .hostel-table tr:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.02);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Back Button */
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #ffcc00;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>🏠 Hostel Facilities at SVPCET</h1>
+    <p>Our hostel provides modern, safe, and comfortable accommodation for students.</p>
+
+    <!-- Animated Table -->
+    <table class="hostel-table">
+        <tr>
+            <th>🏡 Facility</th>
+            <th>✅ Availability</th>
+        </tr>
+        <tr>
+            <td>Furnished Rooms (Bed, Study Table, Chair, Wardrobe)</td>
+            <td>✔ Available</td>
+        </tr>
+        <tr>
+            <td>24/7 Security & CCTV Surveillance</td>
+            <td>✔ Available</td>
+        </tr>
+        <tr>
+            <td>Wi-Fi & Study Room Facilities</td>
+            <td>✔ Available</td>
+        </tr>
+        <tr>
+            <td>Mess & Food (Breakfast, Lunch, Dinner)</td>
+            <td>✔ Included</td>
+        </tr>
+        <tr>
+            <td>Laundry & Cleaning Services</td>
+            <td>✔ Weekly</td>
+        </tr>
+        <tr>
+            <td>Recreational Areas & Sports Facilities</td>
+            <td>✔ Available</td>
+        </tr>
+    </table>
+
+    <!-- Back to Main Page -->
+    <a href="fees.html" class="back-link">🔙 Back to Fee Structure</a>
+
+</body>
+</html>

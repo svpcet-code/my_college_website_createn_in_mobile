@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Sidebar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 4px 0 10px #00ffee;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 22px;
+            color: #00ffee;
+            display: block;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .sidebar a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+
+        /* Sidebar Close Button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+            cursor: pointer;
+            color: #00ffee;
+        }
+
+        .close-btn:hover {
+            color: #ff00ff;
+        }
+
+        /* Open Sidebar Button */
+        .open-btn {
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #00ffee;
+            padding: 15px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            transition: 0.3s;
+        }
+
+        .open-btn:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+        
+        
+        body {
+      background-color: #0f0f1e;
+      font-family: 'Courier New', Courier, monospace;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 50vh;
+    }
+
+    h1 {
+      color: #00ffe0;
+      text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0;
+      margin-bottom: 20px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #2a2d4f, #1f1f3d);
+      border: 2px solid #00ffe0;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 15px #00ffe0, 0 0 30px #00ffe0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #ff0080, 0 0 50px #ff0080;
+    }
+
+    .card-title {
+      font-size: 1.5em;
+      color: #ff0080;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080;
+    }
+
+    .card-description {
+      font-size: 0.9em;
+      color: #cfcfcf;
+      margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Button to open the sidebar -->
+    <button class="open-btn" onclick="openSidebar()">☰ Menu</button>
+
+    <!-- Sidebar Navigation -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×<<<<<<<<
+      </a>
+        <a href="Homepage.html">Home</a>
+        <a href="#">stay</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- JavaScript for Sidebar -->
+    <script>
+        function openSidebar() {
+            document.getElementById("mySidebar").style.width = "250px";
+        }
+
+        function closeSidebar() {
+            document.getElementById("mySidebar").style.width = "0";
+        }
+    </script>
+
+<body>
+  <h1>Engineering Departments</h1>
+  <div class="card-container">
+    <!-- Flashcards Start -->
+    <div class="card">
+      <h2 class="card-title">Computer Engineering 💻
+        </h2><a href="/html/pdf.html">Computer Engineering</a>
+      <p class="learn more">
+  
+    </div>
+    
+    
+    <div class="card">
+      <h2 class="card-title">Information Technology 🌐</h2>
+     
+    <a href="artificial-intelligence.html">Information Technology</a>
+ 
+    </div>
+    <div class="card">
+      <h2 class="card-title">Artificial Intelligence🤖</h2>
+     <a href="artificial-intelligence.html">Artificial Intelligence</a>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Data Science 📊</h2>
+      <a href="data-science.html">Data Science</a>
+    </div>
+    <div class="card">
+      <h2 class="card-title">IOT Engineering 🪫</h2>
+<a href="iot-engineering.html">IoT Engineering</a>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Cyber Security 🎩</h2>
+<a href="cyber security.html">
+Cyber Security
+    </a>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Electronic and Telec.📽️</h2>
+<a href="electronics-telecom.html">Electronics and Telecommunication</a>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Electrical Engineering ⚡</h2>
+
+  
+     <a href="electrical-engineering.html">Electrical Engineering</a>
+     
+
+
+    </div>
+    <div class="card">
+      <h2 class="card-title">Machanical Engineering 🏎️</h2>
+   
+   <a href="mechanical-engineering.html">Mechanical Engineering</a>
+    </div>
+    <div class="card">
+      <h2 class="card-title">civil Engineering🏯</h2>
+      
+      <a href="civil-engineering.html">Civil Engineering</a>
+      
+    </div>
+    <div class="card">
+      <h2 class="card-title">Mecatronic Engineering</h2>
+      <p class="card-description">current no available</p>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Aeronautical engineering ✈️</h2>
+      <p class="card-description">currently not available </p>
+    </div>
+    
+    <!-- Flashcards End -->
+  </div>
+</body>
+</html>
