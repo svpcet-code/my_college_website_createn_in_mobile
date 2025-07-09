@@ -1,1 +1,1 @@
-# my_college_website_createn_in_mobile
+# my_college_website_creat_in_mobile
